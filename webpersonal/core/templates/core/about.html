@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/m4.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Miriam Vega</h2>   
+        <p>Estudie programación en el Centro de Estudios Tecnologicos y de Servicio No. 23, por lo que tengo ciertos conocimientos respecto a esta rama.</p>
+        <p>He obtenido conocimientos en el habito de redes digitales gracias a mi estancia en la Universidad Tecnológica del Valle de Toluca, aun sigo aprendiendo y me gustaria llegar a aprender mas respecto a la ciberseguridad y protección de datos.</p>
+    </div>
+</div>
+{% endblock %}
